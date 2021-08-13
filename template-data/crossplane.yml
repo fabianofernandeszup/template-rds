@@ -6,14 +6,14 @@ namespace: {{namespace}}
 spec:
 compositionSelector:
   matchLabels:
-  environment: dev
+  environment: {{env}}
   provider: provider-aws
 parameters:
   allocatedStorage: 100
   dbInstanceClass: db.t3.medium
-  dbName: dev
+  dbName: {{env}}
   dbParameterGroupName: {{namespace}}-{{engine}}-secure
-  engine: engine
+  engine: {{engine}}
   engineVersion: '12.5'
 writeConnectionSecretToRef:
   name: {{base-name}}
