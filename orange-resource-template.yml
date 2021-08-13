@@ -6,6 +6,10 @@ inputs:
     name: base-name
     type: text
 
+  - label: 'Name space:'
+    name: namespace
+    type: text
+
   - label: 'Read Replica'
     name: read-replica
     type: bool
@@ -13,9 +17,9 @@ inputs:
     itens:
       - true
       - false
-      -
+
   - label: 'Engine'
-    name: read-replica
+    name: engine
     type: bool
     default: postgres
     itens:
