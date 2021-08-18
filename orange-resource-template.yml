@@ -8,6 +8,7 @@ inputs:
 
   - label: 'Name space:'
     name: namespace
+    default: 'orange'
     type: text
 
   - label: 'Read Replica'
